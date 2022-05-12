@@ -1,12 +1,11 @@
-package main
+package reverse_string
 
-func main() {
-	println(ReverseString("Hello World"))
-}
+import "fmt"
 
 func ReverseString(input string) (output string) {
 	for _, v := range input {
 		output = string(v) + output
 	}
+	fmt.Println(output)
 	return output
 }
